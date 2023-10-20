@@ -1,0 +1,313 @@
+body, html{
+	background-color: none;
+	overflow: hidden;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	margin: 0; 
+	padding: 0; 
+	height: 100%; 
+	min-height: 100%;
+	overflow: hidden;
+}
+:-webkit-full-screen  {
+  width: 100%;
+  height: 100%;
+}
+
+#mute{
+	float: right;
+	margin-left: 80px;
+	text-decoration: underline;
+	margin-right: 10px;
+	height: 20px;
+	position: relative;
+	top: 50%;
+	transform: translate(0%, -50%);	
+}
+#overlay{
+	position: fixed;
+	
+	background-color: rgba(0,0,0,0.4);
+	background-repeat: repeat;
+	background-size: auto;
+		
+	left: 0px;
+	top: 0px;
+	background-position: center center;
+		
+	opacity: 0.8;
+
+	z-index: 2;
+        width: 100%;
+        height: 90px;
+}
+#burgermenu{
+	position: fixed;
+	top: 0;
+	left: 100px;
+	width: 400px;
+	height: 90px;
+	text-align: left;
+	z-index: 9;
+	
+}
+#burgermenu img{
+	height: 100%;
+	width: auto;
+}
+#menuicon{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 600px;
+	height: 100px;
+	z-index: 9;
+	text-align: center;
+}
+#menuicon_bloc{
+	position: absolute;
+	height: 40px;
+	width: 440px;
+	top: 50%;
+	left: 50%;
+	
+	transform: translate(-50%, -50%);
+}
+#menuicon_bloc div{
+	position: relative;
+	float: left;
+	width: auto;
+}
+#menuicon_bloc div img{
+	height: 40px;
+}
+#icon_intro, #icon_circle, #icon_location, #icon_pen{
+	margin-right: 60px;
+}
+#footer{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 30px;
+	background-color: lightgrey;
+	z-index: 10;
+	font-family: 'Lato', sans-serif; 
+	font-size: 13px;
+	font-weight: 300;
+	color: #676666;
+	pointer-events: all;
+}
+#footer div{
+	position: relative;
+	top: 50%;
+	transform: translate(0%, -50%);
+	cursor: default;
+}
+#universite{
+	float: left;
+	margin-left: 10px;
+}
+#propos, #contacts, #notice{
+	float: left;
+	margin-left: 80px;
+	text-decoration: underline;
+}
+
+#tutoriel, #expand, #img_tuto{
+	float: right;
+}
+#img_tuto{
+	margin-right: 10px;
+	height: 20px;
+	position: relative;
+	top: 50%;
+	transform: translate(0%, -50%);
+}
+#expand{
+	margin-left: 80px;
+	margin-right: 10px;
+	height: 20px;
+	position: relative;
+	top: 50%;
+	transform: translate(0%, -50%);
+}
+#v1{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	
+	transform: translate(-50%, -50%);
+}
+svg.cerclecont{
+	position: fixed;
+	pointer-events: none;
+	top: 68%;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 6;
+}
+#canvas{
+	position: fixed;
+	top: 68%;
+	min-width: 100%;
+	z-index: 5;
+	opacity: 0.5;
+	overflow: hidden;
+}
+circle.cercle{
+	position: absolute;
+	pointer-events: all;
+	left: 50%;
+	top: 50%;
+	cursor: pointer;
+}
+#menuicon img{cursor: pointer;}
+#tracker{
+	position: fixed;
+	width: 100px; 
+	height: 350px;
+	z-index: 6;
+	pointer-events: none;
+	
+	transform: translate(-100%, -100%);
+}
+#legende{
+	position: fixed;
+	width: auto; 
+	height: auto;
+	z-index: 6;
+	pointer-events: none;
+	font-family: 'Lato', sans-serif;
+	opacity: 0;
+				
+	transform: translate(-30px, -240px);			
+}
+
+@media (max-height: 800px) {
+	#legende {
+		margin-top: 2%;
+	}
+
+	svg.cerclecont {
+		top: 55%;
+	}
+
+	#canvas {
+		top: 55%;
+	}
+}
+
+#numAtelier{
+	font-size: 20px;
+	font-weight: 400;
+	color: #ffffff;
+	text-align: right;
+}
+#nomAtelier{
+	font-size: 35px;
+	font-weight: 700;
+	color: #fa7346;
+	text-align: left;
+}
+#endroit{
+	position: absolute;
+	bottom: 0;
+	left: 100px;
+	width: 600px;
+	height: 200px;
+	color: white;
+	font-family: 'Lato', sans-serif; 
+	text-align: left;
+	opacity: 0;
+	z-index: 6;
+	pointer-events: none;
+}
+#endroit_bloc{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#tp_endroit{
+	font-weight: 700;
+	color: #fa7346;
+}
+#nom_endroit{
+	font-size: 40px;
+	font-weight: 700;
+}
+#responsable_endroit{
+	font-size: 15px;
+	font-weight: 300;
+}
+#nom_responsable_endroit{
+	font-weight: 700;
+}
+#overlay_temp{
+	position: fixed;
+	opacity: 0.85; 
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 6;
+	background-color : black;
+	overflow: hidden;
+}
+#overlay_pano{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 6;
+	overflow: hidden;
+	pointer-events: none;
+}
+#chargement{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 6;
+	font-family: 'Lato', sans-serif;
+	font-size: 60px;
+	font-weight: 400;
+	color: #fa7346;
+	cursor: default;
+}
+#pourcentageChargement{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	width: 200px;
+	text-align: center;
+	transform: translate(-50%, -50%);
+	opacity: 1;
+}
+#animationChargement{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 800px;
+	height: 800px;
+	text-align: center;
+	transform: translate(-50%, -50%);
+}
+#fondChargement{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: #fa7346;
+}

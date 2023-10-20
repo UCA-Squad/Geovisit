@@ -1,0 +1,245 @@
+#splash_choix{
+	position: absolute;
+	width: 100px;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+}
+
+.dialog_operations
+{
+	/*z-index:3000; width:100%; height:100%; position: fixed; top: 0; left: 0; background-color: rgba(0,0,0,0.95);*/
+	display:none;
+}
+
+.dialog_operations_over
+{
+	/*z-index:3000; width:100%; height:100%; position: fixed; top: 0; left: 0; background-color: rgba(0,0,0,0.95);*/
+	display:none;
+}
+
+.contenu-cacher
+{
+	display:none;
+}
+
+#popup_sites_over_dragupload.active_over, .popup_over_dragupload_exercices.active_over, .popup_over_liensupload_exercices.active_over, #popup_over_dossier.active_over, #popup_sites_over_liensupload.active_over {
+
+	z-index:3000; width:100%; height:100%; position: fixed; top: 0; left: 0; background-color: rgba(0,0,0,0.25);
+    display: block;
+}
+
+#popup_sites.active, #popup_sites_chx.active, #popup_sites_over_dragupload.active, .popup_exercice_upload.active, #popup_sites_upload.active {
+
+	z-index:3000; width:100%; height:100%; position: fixed; top: 0; left: 0; background-color: rgba(0,0,0,0.25);
+    display: block;
+}
+
+#popup_sites_intro.active
+{
+	z-index:3000; width:100%; height:100%; position: fixed; top: 0; left: 0; background-color: rgba(0,0,0,0.95);
+    display: block;
+}
+
+#contenus_popup_sites, #contenus_popup_sites_chx, #contenus_popup_over_dragupload, #contenus_popup_over_liensupload, .contenus_popup_upload_exercice, .contenus_popup_over_dragupload_exercices, #contenus_popup_upload, #popup_intro
+{
+	display:none;
+}
+
+#contenus_popup_sites.active, #contenus_popup_sites_chx.active, #contenus_popup_over_dragupload.active, #contenus_popup_over_liensupload.active, #contenus_popup_upload.active, .contenus_popup_upload_exercice.active, .contenus_popup_over_dragupload_exercices.active_over, .contenus_popup_over_dragupload_exercices.active, #popup_intro.active, #contenus_popup_over_dossier.active
+{
+	display:block;
+}
+
+
+
+.popup_intro_titre
+{
+	font-size: 40px;
+	font-weight: 700;
+	color: #fa7346;
+	pointer-events: none;
+	background:none;
+	border:none;
+	text-transform: uppercase;
+}
+
+.popup_intro_sstitre
+{
+	font-size: 15px;
+	font-weight: 700;
+	color: #ffffff;
+	pointer-events: none;
+	background:none;
+	border:none;
+}
+
+.popup_intro_texte
+{
+	font-size: 20px;
+	font-weight: 300;
+	color: #ffffff;
+	text-align: left;
+	pointer-events: none;
+	background:none;
+	border:none;
+
+}
+
+#popup_intro
+{
+	position: relative;
+	font-family: 'Lato', sans-serif;
+	pointer-events: all;
+	text-align: center;
+	width: 780px;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+
+
+
+#overlay_click{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 1200px;
+	font-family: 'Lato', sans-serif;
+	pointer-events: none;
+
+	transform: translate(-50%, -50%);
+}
+#bloc_nom{
+	width: 100%;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	color: white;
+}
+#bonjour{
+	font-size: 22.47pt;
+	font-weight: 400;
+	color: white;
+}
+#barre{
+	text-align: center;
+}
+#tpn{
+	font-size: 10pt;
+	font-weight: 300;
+}
+#bloc_contenu{
+	position: relative;
+	width: 100%;
+	margin-top: 60px;
+	height: 360px;
+}
+#img_txt{
+	position: relative;
+	left: 50%;
+	width: 1100px;
+	height: 100%;
+		
+	transform: translate(-50%, 0%);
+}
+.fleches{
+	float: left;
+	width: 250px;
+	height: 100%;
+	text-align: center;
+	pointer-events: none;
+}
+#fleche_gauche, #fleche_droite{
+	position: relative;
+	top: 50%;
+	pointer-events: all;
+	disabled: true;
+	
+	transform: translate(0%, -50%);
+}
+#bloc_img{
+	float: left;
+	width: 180px;
+	height: 100%;
+	margin-right: 40px;
+}
+#img_site{
+	position: relative;
+	width: 180px;
+	height: 180px;
+	border-radius: 90px;
+	-webkit-border-radius: 90px;
+	-moz-border-radius: 90px;
+	top: 50%;
+		
+	transform: translate(0%, -50%);
+}
+#bloc_texte{
+	float: left;
+	width: 380px;
+	height: 100%;
+}
+#description{
+	position: relative;
+	top: 50%;
+	
+	transform: translate(0%, -50%);
+}
+#numero_tpn{
+	font-size: 15px;
+	font-weight: 700;
+	color: #fa7346;
+	text-align: right;
+}
+#nom_tpn{
+	font-size: 40px;
+	font-weight: 700;
+	color: white;
+	text-align: right;
+}
+#prof{
+	font-size:15px;
+	font-weight: 300;
+	color: #ffffff;
+	text-align: right;
+}
+#nom_prof{
+	 font-weight: 700;
+}
+#texte{
+	font-size: 20px;
+	font-weight: 300;
+	font-style: italic;
+	color: #ffffff;
+	text-align: right;
+}
+#ateliers{
+	font-size: 30px;
+	font-weight: 300;
+	color: #ffffff;
+	text-align: right;
+}
+#bloc_progress{
+	position: relative;
+	text-align: center;
+}
+#bloc_bouton{
+	position: relative;
+	text-align: center;
+}
+#bouton_label_choix{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 15px;
+	font-weight: 700;
+	color: #ffffff;
+	
+	transform: translate(-50%, -50%);
+}
+#bouton_forme_choix{
+	pointer-events: all;
+}
+
+.fleche_gauche_exercices {
+    cursor: pointer;
+}

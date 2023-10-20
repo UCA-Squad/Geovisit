@@ -1,0 +1,92 @@
+/*
+
+
+Observatoire de Physique du Globe de Clermont-Ferrand
+Campus Universitaire des Cezeaux
+4 Avenue Blaise Pascal
+TSA 60026 - CS 60026
+63178 AUBIERE CEDEX FRANCE
+
+Author: Yannick Guehenneux
+        y.guehenneux [at] opgc.fr
+
+*/
+/* 
+    Created on : 2 avr. 2021, 10:55:59
+    Author     : guehenneux
+*/
+
+
+.qcm-text {
+    color: white;
+}
+
+.qcm-title {
+    color: #fa7346;
+}
+
+.qcm-answer {
+    cursor: pointer;
+    padding: 0px 30px;
+    display: inline-block;
+}
+
+.qcm-cell {
+    text-align: left;
+}
+
+.qcm-question-div {
+    margin: 50px 0px;
+}
+
+.qcm-button {
+    background: #DBDBDB;
+    cursor: pointer;
+    border-radius: 50px;
+    text-decoration: none;
+    padding: 10px 40px;
+    display: inline-block;
+    font-size: 12px;
+    margin-bottom: 50px;
+}
+
+.qcm-submit {
+    background: #F96332;
+    padding: 15px 60px;
+    cursor: pointer;
+    margin-top: 100px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.qcm-vrai {
+    font-weight: bold;
+    color: #00FF00;
+}
+
+.qcm-faux {
+    font-weight: bold;
+    color: #FF0000;
+}
+
+.qcm-msg {
+    color: #fa7346;
+}
+
+.input-titre-qcm-description {
+    color: #F96332;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.input-soustitre-qcm-description {
+    color: #fa7346;
+    font-size: 22px;
+    font-style: italic;
+}
+
+.input-texte-qcm-description {
+    color: white;
+    font-size: 16px;
+}

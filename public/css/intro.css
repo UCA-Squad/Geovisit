@@ -1,0 +1,109 @@
+body, html{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color: transparent;
+	overflow: hidden;
+}
+#v1 
+{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: 20;
+	transform: translate(-50%, -50%);
+}
+#canvas{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+    min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	max-width: 100%;
+}
+#overlay{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	z-index: 30;
+	opacity: 1;
+	font-family: 'Lato', sans-serif;
+	
+	pointer-events: none;
+	
+	transform: translate(-50%, -50%);
+}
+#splash
+{
+	width: 50%;
+	opacity: 0;
+}
+#bouton
+{
+	position: relative;
+	z-index: 31;
+	opacity: 0;
+}
+#bouton_svg{
+	text-align: center;
+}
+#bouton_rect{
+	pointer-events: all;
+}
+#bouton_label{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 15px;
+	font-weight: bold;
+	color: #ffffff;
+	
+	transform: translate(-50%, -0%);
+}
+.error{display: block; color: white; height: 10px;margin-top:-25px}
+.deconnexion .libelle{padding-top:25px}
+.libelle{
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	display: inline-block;
+	vertical-align: top;
+	padding: 17px 10px;
+	font-size: 17px;
+		color: white
+
+	}
+
+.deconnexion #icon_logout
+{
+	width:40px;
+	height:46px;
+	background-image: url(img/logout.png);
+	background-repeat:no-repeat;
+	border:none;
+	display: inline-block;
+	margin-top:10px
+	
+}
+#icon_admin
+{
+	width:40px;
+	height:40px;
+	background-image: url(img/icon_admin.png);
+	background-repeat:no-repeat;
+	border:none;
+	display: inline-block;
+	margin-top: 10px 
+	
+	
+}
+.administration{display: inline-block; margin-left: 44%}

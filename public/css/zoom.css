@@ -1,0 +1,92 @@
+#zoomOverlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+        z-index: 49000;
+        pointer-events: none;
+}
+#ligneZoom, #zoomNbExercices{
+	position: absolute;
+	top: -40px;
+}
+#zoomBloc{
+	position: absolute;
+	right: 80px;
+	top: 50%;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 13px;
+	color: white;
+	height: 700px;
+	width: 100px;
+	z-index: 300000000;
+	
+	transform: translate(-0%, -50%);
+}
+
+@media (max-width: 900px) {
+	#zoomBloc{
+		width: 0!important;
+	}
+}
+#zoomBar{
+	position: absolute;
+	height: 600px;
+	width: 80px;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#zoomHaut{
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	transform: translate(-50%, -0%);
+}
+#zoomBas{
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translate(-50%, -0%);
+}
+#zoomEndroit{
+	position: absolute;
+	bottom: 0;
+	left: 100px;
+	width: 600px;
+	height: 200px;
+	color: white;
+	font-family: 'Lato', sans-serif; 
+	text-align: left;
+	z-index: 300000000;
+	pointer-events: none;
+}
+#zoomEndroitBloc{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#zoomNbExercices{
+	font-weight: 300;
+	font-size: 13px;
+	text-align: center;
+	margin-top: 600px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#zoomNomAtelier{
+	font-size: 30px;
+	font-weight: 700;
+	color: #fa7346;
+}
+#zoomSite{
+	font-size: 15px;
+	font-weight: 300;
+}
+#zoomNomSite{
+	font-weight: 700;
+}
