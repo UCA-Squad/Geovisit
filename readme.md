@@ -13,7 +13,7 @@ Pre-requires
 Installation
 ------------
 
-- ```git clone ```[oui](https://gitlab.dsi.uca.fr/lylblaud/geovisit)
+- ```git clone ```[https://github.com/UCA-Squad/Geovisit](https://github.com/UCA-Squad/Geovisit)
 - ```cd geovisit/```
 - ```cp .env .env.local```
 
