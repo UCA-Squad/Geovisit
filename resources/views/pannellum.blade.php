@@ -276,9 +276,9 @@ if ($id != 0) {
                 setTimeout(function () {
                     if(pan.isLoaded() === undefined) {
                         pan.destroy();
-                        getOriginalSizeAndResize(newWidth*0.9, newHeight*0.9, originalImageURL);
+                        getOriginalSizeAndResize(newWidth*0.95, newHeight*0.95, originalImageURL);
                     }
-                }, 100);
+                }, 500);
             });
         }
         function resizeImage(imageUrl, newWidth, newHeight, callback) {
